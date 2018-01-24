@@ -1,0 +1,12 @@
+---
+- hosts: audit
+ gather_facts: no
+ become: yes
+ tasks:
+   - name: AUDIT FRR
+     service: name=frr state=stopped
+     notify:
+     - launch a ticket
+ handlers:
+   - name: launch a ticket
+     msg: "Launching a ticket"
