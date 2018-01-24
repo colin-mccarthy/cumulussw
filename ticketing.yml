@@ -9,4 +9,4 @@
      - launch a ticket
  handlers:
    - name: launch a ticket
-     msg: "Launching a ticket"
+     debug: msg="Launching a ticket"
