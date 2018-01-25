@@ -4,7 +4,7 @@
  become: yes
  tasks:
    - name: AUDIT FRR
-     service: name=frr state=stopped
+     service: name=frr state=started
      notify:
      - launch a ticket
  handlers:
